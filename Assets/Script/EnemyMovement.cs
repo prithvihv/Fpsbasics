@@ -14,7 +14,7 @@ public class EnemyMovement : MonoBehaviour {
     private Vector3 smoothVelocity = new Vector3(0.5f, 0.5f);
     // Use this for initialization
     void Start () {
-        player = GameObject.Find("FPSController");
+        player = GameObject.Find("RigidBodyFPSController");
         playerposition = player.transform;
         curEnemyPosition = GetComponent<Transform>();
 	}
@@ -29,11 +29,11 @@ public class EnemyMovement : MonoBehaviour {
     }
     void OnCollisionEnter(Collision col)
     {
-        if (col.gameObject.name == "FPSController")
+        if (col.gameObject.name == "RigidBodyFPSController")
         {
             Destroy(this.gameObject);
         }
-        if(col.gameObject.name == "Bullet(Clone)")
+        if(col.gameObject.name == "Bullet(Clone)"|| col.gameObject.name == "SBullet(Clone)")
         {
             Destroy(this.gameObject);
         }

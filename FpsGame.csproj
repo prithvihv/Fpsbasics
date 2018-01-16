@@ -294,13 +294,15 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\bulletrespawning.cs" />
-    <Compile Include="Assets\copy.cs" />
-    <Compile Include="Assets\EnemyMan.cs" />
-    <Compile Include="Assets\EnemyMovement.cs" />
-    <Compile Include="Assets\Gameover.cs" />
-    <Compile Include="Assets\Healt.cs" />
-    <Compile Include="Assets\shooting.cs" />
+    <Compile Include="Assets\Script\BonusAdder.cs" />
+    <Compile Include="Assets\Script\bonusSpawner.cs" />
+    <Compile Include="Assets\Script\bulletrespawning.cs" />
+    <Compile Include="Assets\Script\copy.cs" />
+    <Compile Include="Assets\Script\EnemyMan.cs" />
+    <Compile Include="Assets\Script\EnemyMovement.cs" />
+    <Compile Include="Assets\Script\Gameover.cs" />
+    <Compile Include="Assets\Script\Healt.cs" />
+    <Compile Include="Assets\Script\shooting.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />

@@ -9,18 +9,22 @@ public class Healt : MonoBehaviour {
     void Start () {
         GameController = GameObject.Find("GameController");
 	}
-	
-	// Update is called once per frame
-	/*void Update () {
+
+    // Update is called once per frame
+    /*void Update () {
         if (HP < 0)
             GameController.GetComponent<Gameover>().over = false;
 	}*/
+
     void OnCollisionEnter(Collision col)
     {
-        HP--;
-        if (HP < 1) {
-            GameController.GetComponent<Gameover>().over = true;
+        if (col.gameObject.name == "Cube(Clone)") {
+            HP--;
+            if (HP < 1)
+            {
+                GameController.GetComponent<Gameover>().over = true;
+            }
         }
-        //Debug.Log(HP);
+        
     }
 }
